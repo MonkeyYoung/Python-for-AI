@@ -36,18 +36,7 @@ plt.show()
 
 
 
-xx=np.array([23,11,22])
-xx.size
 
-
-# In[33]:
-
-
-for i in range(xx.size):
-    print(xx[i])
-
-
-# In[ ]:
 
 
 
