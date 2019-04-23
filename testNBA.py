@@ -33,13 +33,7 @@ plt.xlabel('总胜场')
 plt.show()
 
 
-# In[23]:
 
-
-matplotlib.matplotlib_fname()
-
-
-# In[31]:
 
 
 xx=np.array([23,11,22])
