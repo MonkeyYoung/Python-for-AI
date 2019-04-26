@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[42]:
+# In[1]:
 
 
 #利用python实现栈，后进先出。
 class Stack:
-    #isEmpty 是否为空 push 放入 pop取出 peek 栈顶
+    #isEmpty 是否为空 push 放入 pop取出 peek 栈顶 size大小
     def __init__(self):
         self.items=[]
     def isEmpty(self):
@@ -19,55 +19,80 @@ class Stack:
         return self.items[len(self.items)-1]
     def size(self):
         return len(self.items)
-s=Stack()
 
 
-# In[43]:
+# In[23]:
 
 
-s.push(1)
+#利用python实现队列，先进先出。
+class Queue:
+    #isEmpty 是否为空 push 放入 pop 取出 peek 队列顶 size 大小
+    def __init__(self):
+        self.items=[]
+    def isEmpty(self):
+        return self.items==[]
+    def push(self,item):
+        self.items.append(item)
+    def pop(self):
+        return self.items.pop(0)
+    def peek(self):
+        return self.items[0]
+    def size(self):
+        return len(self.items)
 
 
-# In[44]:
+# In[24]:
 
 
-s.push(2)
+q=Queue()
 
 
-# In[45]:
+# In[25]:
 
 
-s.push(3)
+q.isEmpty()
 
 
-# In[46]:
+# In[26]:
 
 
-s.push('xixi')
+q.push(3)
 
 
-# In[47]:
+# In[27]:
 
 
-s.isEmpty()
+q.push(5)
 
 
-# In[50]:
+# In[28]:
 
 
-s.peek()
+q.push(7)
 
 
-# In[51]:
+# In[29]:
 
 
-s.pop()
+q.peek()
 
 
-# In[52]:
+# In[31]:
 
 
-s.size()
+q.peek()
+
+
+# In[33]:
+
+
+q.pop()
+
+
+# In[34]:
+
+
+q.peek()
 
 
 # In[ ]:
